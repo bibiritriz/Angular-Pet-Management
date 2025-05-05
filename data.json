@@ -1,19 +1,24 @@
 {
-  "posts": [
+  "owner": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Beatriz Camargo",
+      "email": "beatriz.example@gmail.com",
+      "phone": "(99)99999-9999"
     }
   ],
-  "comments": [
+  "pet": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Rita Lee",
+      "specie": "Poodle",
+      "age": 2,
+      "owner": {
+        "id": 1,
+        "name": "Beatriz Camargo",
+        "email": "beatriz.example@gmail.com",
+        "phone": "(99)99999-9999"
+      }
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
