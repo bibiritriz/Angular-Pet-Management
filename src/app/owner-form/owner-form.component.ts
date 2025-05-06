@@ -41,11 +41,9 @@ export class OwnerFormComponent implements OnInit {
   save() {
     if (this.formGroupOwner.valid) {
       const owner = this.formGroupOwner.value;
-      if (owner.id) {
-        this.ownerService.updateOwner(owner).subscribe();
-      }else{
-        this.ownerService.postOwner(owner).subscribe();
-      }
+      owner.id
+        ? this.ownerService.updateOwner(owner).subscribe()
+        : this.ownerService.postOwner(owner).subscribe();
       this.formGroupOwner.reset();
     }
   }

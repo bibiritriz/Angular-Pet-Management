@@ -27,7 +27,7 @@
       }
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Max",
       "specie": "Siberian Husky",
       "age": 1,
@@ -36,6 +36,30 @@
         "name": "Isaque Batista",
         "email": "isaque.example@gmail.com",
         "phone": "(99)99999-9999"
+      }
+    },
+    {
+      "id": 3,
+      "name": "1",
+      "specie": "1",
+      "age": 1,
+      "owner": {
+        "id": 1,
+        "name": "Beatriz Camargo",
+        "email": "beatriz.example@gmail.com",
+        "phone": "(99)99999-9999"
+      }
+    },
+    {
+      "id": 4,
+      "name": "1",
+      "specie": "1",
+      "age": 1,
+      "owner": {
+        "id": 3,
+        "name": "1",
+        "email": "1",
+        "phone": "1"
       }
     }
   ]

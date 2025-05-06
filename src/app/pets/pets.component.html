@@ -11,15 +11,20 @@
         <th scope="col">Specie</th>
         <th scope="col">Age</th>
         <th scope="col">Owner</th>
+        <th scope="col">Options</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>mdo</td>
-        <td>mdo</td>
+      <tr *ngFor="let p of pets">
+        <th scope="row">{{p.id}}</th>
+        <td>{{p.name}}</td>
+        <td>{{p.specie}}</td>
+        <td>{{p.age}}</td>
+        <td>{{p.owner.name}}</td>
+        <td>
+          <a class="btn btn-success me-2" [routerLink]="['/pet/edit/', p.id]" role="button">Edit</a>
+          <button type="button" class="btn btn-danger" (click)="deletePet(p.id)">Delete</button>
+        </td>
       </tr>
     </tbody>
   </table>
