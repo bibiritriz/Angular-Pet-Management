@@ -15,8 +15,8 @@ export class OwnerService {
     return this.http.get<Owner[]>(this.apiUrl);
   }
 
-  getOwner(): Observable<Owner> {
-    return this.http.get<Owner>(this.apiUrl);
+  getOwner(id: number): Observable<Owner> {
+    return this.http.get<Owner>(`${this.apiUrl}/${id}`);
   }
 
   updateOwner(owner: Owner): Observable<void> {

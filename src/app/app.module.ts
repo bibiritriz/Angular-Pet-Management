@@ -11,6 +11,8 @@ import { PetsComponent } from './pets/pets.component';
 import { OwnersComponent } from './owners/owners.component';
 import { OwnerFormComponent } from './owner-form/owner-form.component';
 import { PetFormComponent } from './pet-form/pet-form.component';
+import { provideHttpClient } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,14 +23,15 @@ import { PetFormComponent } from './pet-form/pet-form.component';
     PetsComponent,
     OwnersComponent,
     OwnerFormComponent,
-    PetFormComponent
+    PetFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

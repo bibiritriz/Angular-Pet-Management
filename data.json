@@ -5,6 +5,12 @@
       "name": "Beatriz Camargo",
       "email": "beatriz.example@gmail.com",
       "phone": "(99)99999-9999"
+    },
+    {
+      "id": 2,
+      "name": "Isaque Batista",
+      "email": "isaque.example@gmail.com",
+      "phone": "(99)99999-9999"
     }
   ],
   "pet": [
@@ -17,6 +23,18 @@
         "id": 1,
         "name": "Beatriz Camargo",
         "email": "beatriz.example@gmail.com",
+        "phone": "(99)99999-9999"
+      }
+    },
+    {
+      "id": 1,
+      "name": "Max",
+      "specie": "Siberian Husky",
+      "age": 1,
+      "owner": {
+        "id": 2,
+        "name": "Isaque Batista",
+        "email": "isaque.example@gmail.com",
         "phone": "(99)99999-9999"
       }
     }

@@ -1,18 +1,18 @@
 <div class="container card m-auto p-2 w-50">
   <h1 class="text-center p-2 fs-bold">Owner Registration</h1>
-  <form class="m-2">
+  <form [formGroup]="formGroupOwner" class="m-2">
     <div class="mb-3">
       <label for="InputName" class="form-label">Name</label>
-      <input type="text" class="form-control" id="InputName" />
+      <input type="text" class="form-control" id="InputName" formControlName="name"/>
     </div>
     <div class="mb-3">
       <label for="InputEmail" class="form-label">Email</label>
-      <input type="email" class="form-control" id="InputEmail" />
+      <input type="email" class="form-control" id="InputEmail" formControlName="email"/>
     </div>
     <div class="mb-3">
       <label for="InputPhone" class="form-label">Phone</label>
-      <input type="text" class="form-control" id="InputPhone" />
+      <input type="text" class="form-control" id="InputPhone" formControlName="phone"/>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="save()">Submit</button>
   </form>
 </div>
